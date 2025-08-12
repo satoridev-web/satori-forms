@@ -1,0 +1,46 @@
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Node modules and dependencies
+node_modules/
+vendor/
+
+# Log files
+*.log
+debug.log
+
+# Compiled CSS/JS maps
+*.css.map
+*.js.map
+
+# Sass cache
+.sass-cache/
+
+# Build artifacts
+/dist/
+/build/
+
+# Local WordPress environment (e.g., Local by Flywheel, WP Local)
+# Adjust path if your dev environment stores WP files differently
+*.sql
+*.sql.gz
+
+# IDE / Editor settings
+.vscode/
+.idea/
+
+# Composer lock file (optional, if you want to ignore it in plugin repos)
+composer.lock
+
+# Env files
+.env
+.env.*
+
+# WordPress core files (if in repo by mistake)
+wp-admin/
+wp-includes/
+wp-content/uploads/
+
+# macOS resource forks
+._*

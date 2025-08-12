@@ -1,0 +1,50 @@
+.
+├── Admin
+│   └── Admin.php
+├── Assets
+│   ├── Css
+│   │   ├── satori-forms-main.css
+│   │   └── satori-forms-main.css.map
+│   ├── Js
+│   │   ├── satori-forms-admin.js
+│   │   └── satori-forms-frontend.js
+│   └── Scss
+│       ├── _base.scss
+│       ├── _form.scss
+│       ├── _mixins.scss
+│       ├── _variables.scss
+│       └── satori-forms-main.scss
+├── Includes
+│   ├── Ajax
+│   │   └── AjaxHandler.php
+│   ├── Forms
+│   │   ├── satori-forms-form-fields.php
+│   │   ├── satori-forms-form-handler.php
+│   │   └── satori-forms-submission-form.php
+│   ├── MetaBoxes
+│   │   └── satori-forms-meta-boxes.php
+│   ├── PostTypes
+│   │   └── RegisterFormsCPT.php
+│   ├── ShortCodes
+│   │   ├── FormShortcodes.php
+│   │   └── ShortcodeManager.php
+│   ├── TemplateFunctions
+│   │   └── satori-forms-template-functions.php
+│   └── TemplateLoader
+│       └── TemplateLoader.php
+├── Languages
+│   └── satori-forms.pot
+├── Templates
+│   ├── Parts
+│   │   └── satori-forms-form-fields.php 
+│   ├── satori-forms-form-confirmation.php
+│   └── satori-forms-form-template.php
+├── CHANGELOG.md
+├── LICENSE
+├── README.md
+├── SATORI-PLUGIN-NAMING-GUIDE.md
+├── satori-forms-folder-structure.txt
+├── satori-forms.php
+└── uninstall.php
+
+17 directories, 31 files
