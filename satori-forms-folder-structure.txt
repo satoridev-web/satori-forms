@@ -1,6 +1,4 @@
 .
-├── Admin
-│   └── Admin.php
 ├── Assets
 │   ├── Css
 │   │   ├── satori-forms-main.css
@@ -15,6 +13,8 @@
 │       ├── _variables.scss
 │       └── satori-forms-main.scss
 ├── Includes
+│   ├── Admin
+│   │   └── Admin.php
 │   ├── Ajax
 │   │   └── AjaxHandler.php
 │   ├── Forms
@@ -36,10 +36,11 @@
 │   └── satori-forms.pot
 ├── Templates
 │   ├── Parts
-│   │   └── satori-forms-form-fields.php 
+│   │   └── satori-forms-form-fields.php
 │   ├── satori-forms-form-confirmation.php
 │   └── satori-forms-form-template.php
 ├── CHANGELOG.md
+├── CHECKLIST.md
 ├── LICENSE
 ├── README.md
 ├── SATORI-PLUGIN-NAMING-GUIDE.md
@@ -47,4 +48,4 @@
 ├── satori-forms.php
 └── uninstall.php
 
-17 directories, 31 files
+17 directories, 32 files
