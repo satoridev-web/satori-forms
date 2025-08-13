@@ -1,13 +1,15 @@
-/* -------------------------------------------------
- * Admin styles for SATORI Forms builder
- * -------------------------------------------------*/
- .satori-forms-builder-actions { margin-bottom: 12px; display:flex; gap:8px; align-items:flex-start; }
- .satori-forms-fields-sortable { list-style:none; margin:0; padding:0; }
- .satori-form-field-item { background:#fff; border:1px solid #e1e1e1; padding:10px; margin-bottom:8px; display:flex; align-items:center; gap:12px; }
- .satori-form-field-handle { cursor:move; padding:6px 8px; background:#f7f7f7; border-radius:4px; }
- .satori-form-field-main { flex:1; }
- .satori-form-field-controls { display:flex; gap:6px; }
- .satori-form-field-settings { margin-top:8px; background:#fafafa; padding:8px; border-radius:3px; border:1px dashed #eee; }
- .satori-field-placeholder { background:#f2f9ff; border:1px dashed #bcd; height:48px; margin-bottom:8px; }
- .satori-forms-no-fields { color:#666; padding:12px; border:1px dashed #ddd; background:#fafafa; }
- 
+/*! SATORI Forms — Admin & basic frontend
+ *  SPDX-License-Identifier: GPL-2.0-or-later
+ */
+
+/* Admin builder tweaks */
+.satori-form-builder .widefat input[type="text"],
+.satori-form-builder .widefat select,
+.satori-form-builder .widefat textarea { max-width: 100%; }
+
+/* Frontend basics */
+.satori-form { margin: 1rem 0; }
+.satori-form-field { margin-bottom: 0.75rem; }
+.satori-form .required { color: #cc0000; margin-left: 4px; }
+.satori-form-success { padding: .6rem .8rem; background:#eaffea; border:1px solid #b4e2b4; margin-bottom:1rem; }
+.satori-form-error   { padding: .6rem .8rem; background:#ffecec; border:1px solid #e2b4b4; margin-bottom:1rem; }
