@@ -1,0 +1,33 @@
+name: Build and Package SATORI Forms
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.1'
+
+      - name: PHP Syntax Check
+        run: find . -type f -name '*.php' -exec php -l {} \;
+
+      - name: Coding Standards
+        run: phpcs --standard=WordPress
+
+      - name: Package Plugin
+        run: zip -r satori-forms.zip . -x "*.git*" "*.github*" "vendor/*" "node_modules/*"
+
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: satori-forms
+          path: satori-forms.zip
