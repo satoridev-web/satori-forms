@@ -1,7 +1,64 @@
-vendor/
-node_modules/
+# -------------------------------------------------
+# SATORI Standard .gitignore
+# For WordPress plugin development across all repos
+# -------------------------------------------------
+
+# --- OS junk ---
 .DS_Store
-*.log
-*.zip
-.idea/
+Thumbs.db
+
+# --- IDE / Editor ---
 .vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# --- Logs & debug ---
+*.log
+*.sql
+*.sqlite
+
+# --- Dependency folders ---
+node_modules/
+vendor/
+bower_components/
+
+# --- Build & cache ---
+*.zip
+*.tar.gz
+*.gz
+*.tgz
+*.rar
+*.7z
+
+# --- Sass / CSS preprocessors ---
+.sass-cache/
+.cache/
+*.map
+
+# --- Composer & npm artifacts ---
+composer.lock
+package-lock.json
+yarn.lock
+
+# --- PHPStorm / Xdebug ---
+.phpstorm.meta.php
+.phpunit.result.cache
+
+# --- WordPress specific ---
+# Ignore wp-env local setup (if used)
+.wp-env.json
+wp-content/uploads/satori-logs/
+wp-content/uploads/cache/
+
+# --- CI/CD & Scripts ---
+.github/
+scripts/
+tests/
+docs/
+
+# --- Misc ---
+*.bak
+*.swp
+*.tmp
+*.old

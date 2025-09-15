@@ -1,17 +1,41 @@
-# Exclude docs from release archives
+# -------------------------------------------------
+# SATORI Standard .gitattributes
+# Ensures clean release zips and consistent formatting
+# -------------------------------------------------
+
+# --- Exclude development-only files/folders from release archives ---
 /docs/* export-ignore
-
-# Exclude GitHub workflow + scripts from release zips
-.github/* export-ignore
+/tests/* export-ignore
 /scripts/* export-ignore
+/.github/* export-ignore
 
-# Keep these files out of distributed zips
+# Common dev config files
 .gitignore export-ignore
 .gitattributes export-ignore
+.editorconfig export-ignore
+.vscode/* export-ignore
+.idea/* export-ignore
 
-# Ensure consistent line endings
-*.php text eol=lf
-*.js text eol=lf
-*.css text eol=lf
-*.scss text eol=lf
-*.md text eol=lf
+# --- Normalize line endings for consistency ---
+*.php   text eol=lf
+*.js    text eol=lf
+*.css   text eol=lf
+*.scss  text eol=lf
+*.json  text eol=lf
+*.yml   text eol=lf
+*.yaml  text eol=lf
+*.md    text eol=lf
+
+# --- Treat images and binaries as binary ---
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.svg binary
+*.ttf binary
+*.woff binary
+*.woff2 binary
+*.zip binary
+*.pdf binary
+*.mp4 binary
