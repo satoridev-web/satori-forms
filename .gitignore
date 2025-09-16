@@ -1,5 +1,5 @@
 # -------------------------------------------------
-# SATORI Standard .gitignore
+# SATORI Standard .gitignore (v2)
 # For WordPress plugin development across all repos
 # -------------------------------------------------
 
@@ -51,11 +51,10 @@ yarn.lock
 wp-content/uploads/satori-logs/
 wp-content/uploads/cache/
 
-# --- CI/CD & Scripts ---
-.github/
-scripts/
-tests/
-docs/
+# --- CI/CD & Workflow ---
+# KEEP .github/ for workflows
+# KEEP scripts/ for helper scripts
+# KEEP docs/ for dev/user documentation
 
 # --- Misc ---
 *.bak
